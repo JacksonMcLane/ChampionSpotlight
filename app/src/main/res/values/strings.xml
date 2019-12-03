@@ -10,6 +10,6 @@
     <string name="menu_passive">Nimble Fighter</string>
     <string name="cost">Cost:</string>
     <string name="range">Range:</string>
-    <string name="thebesttesterstringintheworld">My test string is better than your test string. My string is better than yours</string>
+    <string name="testString">ASDF</string>
 
 </resources>
