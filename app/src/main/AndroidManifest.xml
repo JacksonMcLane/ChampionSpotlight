@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PassiveFragment"></activity>
+        <activity android:name=".QFragment"></activity>
         <activity
             android:name=".ChampionSpotlightActivity"
-            android:label="@string/title_activity_champion_spotlight"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
