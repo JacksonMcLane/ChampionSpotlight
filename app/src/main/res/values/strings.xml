@@ -8,8 +8,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="menu_passive">Nimble Fighter</string>
+    <string name="menu_q">Urchin Strike</string>
     <string name="cost">Cost:</string>
     <string name="range">Range:</string>
-    <string name="testString">ASDF</string>
+
 
 </resources>

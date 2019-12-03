@@ -10,6 +10,11 @@
             android:title="@string/menu_passive"
             />
 
+        <item
+            android:id="@+id/nav_q"
+
+            android:title="@string/menu_q"
+            />
     </group>
 
 </menu>
