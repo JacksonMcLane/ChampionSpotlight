@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PassiveFragment"></activity>
         <activity
             android:name=".ChampionSpotlightActivity"
             android:label="@string/title_activity_champion_spotlight"
