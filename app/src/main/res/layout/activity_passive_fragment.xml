@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.04" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView_passive_cost"
         android:layout_width="75dp"
         android:layout_height="23dp"
         android:layout_marginTop="16dp"
@@ -38,13 +38,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_passive_name" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView_passive_cost_number"
         android:layout_width="104dp"
         android:layout_height="23dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView_passive_cost"
         app:layout_constraintTop_toBottomOf="@+id/textView_passive_name" />
 
     <TextView
@@ -53,8 +53,8 @@
         android:layout_height="36dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/textView_passive_cost"
+        app:layout_constraintTop_toBottomOf="@+id/textView_passive_cost" />
 
     <TextView
         android:id="@+id/textView6"
@@ -64,5 +64,5 @@
         android:layout_marginTop="12dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_passive_cost_number" />
 </androidx.constraintlayout.widget.ConstraintLayout>

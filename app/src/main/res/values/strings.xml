@@ -10,5 +10,6 @@
     <string name="menu_passive">Nimble Fighter</string>
     <string name="cost">Cost:</string>
     <string name="range">Range:</string>
+    <string name="testString">ASDF</string>
 
 </resources>
