@@ -14,102 +14,71 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:src="@drawable/fizz_e"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049"
-        android:src ="@drawable/fizz_e" />
+        app:layout_constraintVertical_bias="0.049" />
 
     <TextView
         android:id="@+id/textView_eFragment_cost"
-        android:layout_width="83dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView_eFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_name"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/textView_eFragment_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_name" />
 
     <TextView
         android:id="@+id/textView_eFragment_costNum"
-        android:layout_width="107dp"
-        android:layout_height="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
-        app:layout_constraintStart_toEndOf="@+id/imageView_eFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_name"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/textView_eFragment_cost"
+        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_name" />
 
     <TextView
         android:id="@+id/textView_eFragment_range"
-        android:layout_width="81dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView_eFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_cost"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintStart_toStartOf="@+id/textView_eFragment_cost"
+        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_cost" />
 
     <TextView
         android:id="@+id/textView_eFragment_rangeNum"
-        android:layout_width="82dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="576dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.319"
-        app:layout_constraintStart_toEndOf="@+id/imageView_eFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_costNum"
-        app:layout_constraintVertical_bias="0.769" />
+        app:layout_constraintStart_toEndOf="@+id/textView_eFragment_range"
+        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_costNum" />
 
     <TextView
         android:id="@+id/textView_eFragment_description"
-        android:layout_width="343dp"
-        android:layout_height="181dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_eFragment_range"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintStart_toStartOf="@+id/imageView_eFragment_image"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_eFragment_image" />
 
     <TextView
         android:id="@+id/textView_eFragment_name"
-        android:layout_width="200dp"
-        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="672dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView_eFragment_image"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.937" />
 </androidx.constraintlayout.widget.ConstraintLayout>

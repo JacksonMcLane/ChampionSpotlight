@@ -10,107 +10,69 @@
         android:id="@+id/imageView_qFragment_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="504dp"
         android:src="@drawable/fizz_q"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.216" />
 
     <TextView
         android:id="@+id/textView_qFragment_name"
-        android:layout_width="195dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/imageView_qFragment_image"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_qFragment_description"
-        android:layout_width="339dp"
-        android:layout_height="173dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_range"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintStart_toStartOf="@+id/imageView_qFragment_image"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_qFragment_image" />
 
     <TextView
         android:id="@+id/textView_qFragment_range"
-        android:layout_width="86dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
-        app:layout_constraintStart_toEndOf="@+id/imageView_qFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_cost"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/textView_qFragment_cost"
+        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_cost" />
 
     <TextView
         android:id="@+id/textView_qFragment_cost"
-        android:layout_width="86dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
-        app:layout_constraintStart_toEndOf="@+id/imageView_qFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_name"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/textView_qFragment_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_name" />
 
     <TextView
         android:id="@+id/textView_qFragment_costNumber"
-        android:layout_width="121dp"
-        android:layout_height="38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
-        app:layout_constraintStart_toEndOf="@+id/imageView_qFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_name"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintStart_toEndOf="@+id/textView_qFragment_cost"
+        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_name" />
 
     <TextView
         android:id="@+id/textView_qFragment_rangeNumber"
-        android:layout_width="119dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
-        app:layout_constraintStart_toEndOf="@+id/imageView_qFragment_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_costNumber"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintStart_toEndOf="@+id/textView_qFragment_range"
+        app:layout_constraintTop_toBottomOf="@+id/textView_qFragment_costNumber" />
 </androidx.constraintlayout.widget.ConstraintLayout>
