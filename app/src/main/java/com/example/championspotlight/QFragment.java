@@ -23,8 +23,16 @@ public class QFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.activity_passive_fragment, container, false);
         wireWidgets(rootView);
+        setValues();
 
 
+
+
+
+        return rootView;
+    }
+
+    private void setValues() {
         textViewName.setText("Urchin Strike");
 
         textViewRangeNum.setText("550");
@@ -33,11 +41,6 @@ public class QFragment extends Fragment {
 
         textViewDescription.setText("Fizz dashes through his target, dealing (+100% total)" +
                 " physical damage plus magic damage. This spell applies on-hit effects.");
-
-
-
-
-        return rootView;
     }
 
     private void wireWidgets(View rootView) {
