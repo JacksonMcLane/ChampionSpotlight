@@ -16,6 +16,7 @@ import android.widget.TextView;
 public class PassiveFragment extends Fragment {
 
     private TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum;
+    private TextView textViewDescription;
     private ImageView imageViewPicture;
 
     @Nullable
@@ -34,6 +35,8 @@ public class PassiveFragment extends Fragment {
         textViewRange.setText(R.string.range);
         textViewCostNum.setText(R.string.n_a);
         textViewRangeNum.setText(R.string.n_a);
+        textViewDescription.setText("Fizz is perpetually Ghost ghosted and takes 4 / 6 / 8 /" +
+                " 10 / 12 / 14 less physical damage from basic attacks, calculated before armor.");
     }
 
     private void wireWidgets(View rootView) {
@@ -42,6 +45,7 @@ public class PassiveFragment extends Fragment {
         textViewRange = rootView.findViewById(R.id.textView_passive_range);
         textViewCostNum = rootView.findViewById(R.id.textView_passive_cost_number);
         textViewRangeNum = rootView.findViewById(R.id.textView_range_number);
+        textViewDescription = rootView.findViewById(R.id.textView_passive_description);
         imageViewPicture = rootView.findViewById(R.id.imageView_passive_image);
     }
 }

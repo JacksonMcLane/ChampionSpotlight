@@ -25,10 +25,10 @@ public class EFragment extends Fragment {
         wireWidgets(rootView);
 
         textViewDescription.setText("\n" +
-                "First Cast: Fizz hops on his trident towards the cursor, becoming briefly untargetable.\n" +
-                "Second Cast: Fizz cancels the spell early, jumping towards the cursor a second time and dealing magic damage to nearby enemies.\n" +
-                "\n" +
-                "If Fizz does not reactivate, he deals damage in a larger area and slows all enemies hit for 2 seconds.");
+                "First Cast: Fizz hops on his trident towards the cursor,\nbecoming briefly untargetable." +
+                "\nSecond Cast: Fizz cancels the spell early, jumping towards\nthe cursor a second time and dealing" +
+                "magic damage to\nnearby enemies.\n" +
+                "If Fizz does not reactivate, he deals damage in a larger area\nand slows all enemies hit for 2 seconds.");
 
         textViewCostNum.setText("90 / 95 / 100 / 105 / 110 Mana");
 
@@ -44,12 +44,12 @@ public class EFragment extends Fragment {
     }
 
     private void wireWidgets(View rootView) {
-        textViewName = rootView.findViewById(R.id.textView_qFragment_name);
-        textViewCost = rootView.findViewById(R.id.textView_qFragment_cost);
-        textViewRange = rootView.findViewById(R.id.textView_qFragment_range);
-        textViewCostNum = rootView.findViewById(R.id.textView_qFragment_costNumber);
-        textViewRangeNum = rootView.findViewById(R.id.textView_qFragment_rangeNumber);
-        imageViewPicture = rootView.findViewById(R.id.imageView_qFragment_image);
-        textViewDescription = rootView.findViewById(R.id.textView_qFragment_description);
+        textViewName = rootView.findViewById(R.id.textView_eFragment_name);
+        textViewCost = rootView.findViewById(R.id.textView_eFragment_cost);
+        textViewRange = rootView.findViewById(R.id.textView_eFragment_range);
+        textViewCostNum = rootView.findViewById(R.id.textView_eFragment_costNum);
+        textViewRangeNum = rootView.findViewById(R.id.textView_eFragment_rangeNum);
+        imageViewPicture = rootView.findViewById(R.id.imageView_eFragment_image);
+        textViewDescription = rootView.findViewById(R.id.textView_eFragment_description);
     }
 }

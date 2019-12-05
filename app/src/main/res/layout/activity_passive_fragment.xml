@@ -19,8 +19,8 @@
 
     <TextView
         android:id="@+id/textView_passive_name"
-        android:layout_width="198dp"
-        android:layout_height="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
@@ -31,8 +31,8 @@
 
     <TextView
         android:id="@+id/textView_passive_cost"
-        android:layout_width="75dp"
-        android:layout_height="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/textView_passive_name"
@@ -40,8 +40,8 @@
 
     <TextView
         android:id="@+id/textView_passive_cost_number"
-        android:layout_width="104dp"
-        android:layout_height="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
@@ -50,8 +50,8 @@
 
     <TextView
         android:id="@+id/textView_passive_range"
-        android:layout_width="70dp"
-        android:layout_height="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/textView_passive_cost"
@@ -59,11 +59,20 @@
 
     <TextView
         android:id="@+id/textView_range_number"
-        android:layout_width="100dp"
-        android:layout_height="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView_passive_range"
         app:layout_constraintTop_toBottomOf="@+id/textView_passive_cost_number" />
+
+    <TextView
+        android:id="@+id/textView_passive_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/imageView_passive_image"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_passive_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>
