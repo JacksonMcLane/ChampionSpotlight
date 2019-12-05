@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_passive_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PassiveFragment">
@@ -48,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_passive_name" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView_passive_range"
         android:layout_width="70dp"
         android:layout_height="36dp"
         android:layout_marginTop="8dp"
@@ -57,12 +58,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_passive_cost" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView_range_number"
         android:layout_width="100dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView_passive_range"
         app:layout_constraintTop_toBottomOf="@+id/textView_passive_cost_number" />
 </androidx.constraintlayout.widget.ConstraintLayout>
