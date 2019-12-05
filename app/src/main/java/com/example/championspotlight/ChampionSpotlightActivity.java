@@ -18,6 +18,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.Menu;
 
@@ -66,9 +68,7 @@ public class ChampionSpotlightActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -77,6 +77,7 @@ public class ChampionSpotlightActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -84,8 +85,41 @@ public class ChampionSpotlightActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Fragment fragment = null;
 
+        switch (id) {
+            case R.id.nav_passive: {
+                fragment = new PassiveFragment();
+                break;
+            }
 
+            case R.id.nav_q: {
+                fragment = new QFragment();
+                break;
+            }
+
+            case R.id.nav_w: {
+                fragment = new WFragment();
+                break;
+            }
+
+            case R.id.nav_e: {
+                fragment = new EFragment();
+                break;
+            }
+
+            case R.id.nav_r: {
+                fragment = new RFragment();
+                break;
+            }
+        }
+
+        FragmentManager fm = getSupportFragmentManager();
+        if (fragment != null) {
+            fm.beginTransaction()
+                    .replace(R.id.contraint_layout_spotlight_container, fragment)
+                    .commit();
+        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 public class PassiveFragment extends Fragment {
 
-    TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum;
-    ImageView imageViewPicture;
+    private TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum;
+    private ImageView imageViewPicture;
 
     @Nullable
     @Override
@@ -24,7 +24,16 @@ public class PassiveFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_passive_fragment, container, false);
         wireWidgets(rootView);
+        setValues();
         return rootView;
+    }
+
+    private void setValues() {
+        textViewName.setText(R.string.menu_passive);
+        textViewCost.setText(R.string.cost);
+        textViewRange.setText(R.string.range);
+        textViewCostNum.setText(R.string.n_a);
+        textViewRangeNum.setText(R.string.n_a);
     }
 
     private void wireWidgets(View rootView) {
