@@ -9,8 +9,12 @@
     <string name="action_settings">Settings</string>
     <string name="menu_passive">Nimble Fighter</string>
     <string name="menu_q">Urchin Strike</string>
+    <string name="menu_w">Seastone Trident</string>
+    <string name="menu_e">Playful / Trickster</string>
+    <string name="menu_r">Chum the Waters</string>
     <string name="cost">Cost:</string>
     <string name="range">Range:</string>
+
 
 
 </resources>

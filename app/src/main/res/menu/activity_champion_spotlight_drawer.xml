@@ -15,6 +15,24 @@
 
             android:title="@string/menu_q"
             />
+
+        <item
+            android:id="@+id/nav_w"
+
+            android:title="@string/menu_w"
+            />
+
+        <item
+            android:id="@+id/nav_e"
+
+            android:title="@string/menu_e"
+            />
+
+        <item
+            android:id="@+id/nav_r"
+
+            android:title="@string/menu_r"
+            />
     </group>
 
 </menu>
