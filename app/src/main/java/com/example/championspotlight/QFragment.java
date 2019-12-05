@@ -14,31 +14,25 @@ import android.widget.TextView;
 
 public class QFragment extends Fragment {
 
-    TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum, textViewDescription;
-    ImageView imageViewPicture;
+    private TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum, textViewDescription;
+    private ImageView imageViewPicture;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.activity_passive_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.activity_qfragment, container, false);
         wireWidgets(rootView);
         setValues();
-
-
-
-
-
         return rootView;
     }
 
     private void setValues() {
-        textViewName.setText("Urchin Strike");
-
+        textViewName.setText(R.string.menu_q);
+        textViewCost.setText(R.string.cost);
+        textViewRange.setText(R.string.range);
         textViewRangeNum.setText("550");
-
         textViewCostNum.setText("50 Mana");
-
         textViewDescription.setText("Fizz dashes through his target, dealing (+100% total)" +
                 " physical damage plus magic damage. This spell applies on-hit effects.");
     }
