@@ -29,6 +29,11 @@ public class EFragment extends Fragment {
 
     private void setValues() {
 
+        textViewDescription.setText(
+                "First Cast: Fizz hops on his trident towards the cursor,\nbecoming briefly untargetable." +
+                "\nSecond Cast: Fizz cancels the spell early, jumping towards\nthe cursor a second time and dealing" +
+                " magic damage to\nnearby enemies.\n" +
+                "If Fizz does not reactivate, he deals damage in a larger area\nand slows all enemies hit for 2 seconds.");
 
         textViewCostNum.setText("90 / 95 / 100 / 105 / 110 Mana");
         Log.d("EFragment", "setValues: " + textViewCostNum.getText());
@@ -40,11 +45,6 @@ public class EFragment extends Fragment {
         textViewRangeNum.setText("400");
 
         textViewName.setText("Playful / Trickster");
-        textViewDescription.setText("\n" +
-                "First Cast: Fizz hops on his trident towards the cursor,\nbecoming briefly untargetable." +
-                "\nSecond Cast: Fizz cancels the spell early, jumping towards\nthe cursor a second time and dealing" +
-                " magic damage to\nnearby enemies.\n" +
-                "If Fizz does not reactivate, he deals damage in a larger area\nand slows all enemies hit for 2 seconds.");
     }
 
     private void wireWidgets(View rootView) {

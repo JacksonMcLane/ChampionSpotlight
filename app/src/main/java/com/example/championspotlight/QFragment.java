@@ -33,8 +33,8 @@ public class QFragment extends Fragment {
         textViewRange.setText(R.string.range);
         textViewRangeNum.setText("550");
         textViewCostNum.setText("50 Mana");
-        textViewDescription.setText("Fizz dashes through his target, dealing (+100% total)" +
-                " physical damage plus magic damage. This spell applies on-hit effects.");
+        textViewDescription.setText("Fizz dashes through his target, dealing (+100% total AD)\n" +
+                "physical damage plus magic damage. This spell applies on-hit effects.");
     }
 
     private void wireWidgets(View rootView) {

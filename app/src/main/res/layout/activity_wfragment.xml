@@ -7,25 +7,70 @@
     tools:context=".WFragment">
 
     <ImageView
-        android:id="@+id/imageView_w_image"
+        android:id="@+id/imageView_wFragment_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/fizz_w"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView_w_name"
-        android:layout_width="198dp"
-        android:layout_height="27dp"
+        android:id="@+id/textView_wFragment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView_w_image"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintStart_toEndOf="@+id/imageView_wFragment_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_wFragment_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView_wFragment_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wFragment_name" />
+
+    <TextView
+        android:id="@+id/textView_wFragment_cost_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView_wFragment_cost"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wFragment_name" />
+
+    <TextView
+        android:id="@+id/textView_wFragment_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView_wFragment_cost"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wFragment_cost" />
+
+    <TextView
+        android:id="@+id/textView_wFragment_range_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView_wFragment_range"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wFragment_cost_num" />
+
+    <TextView
+        android:id="@+id/textView_wFragment_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/imageView_wFragment_image"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_wFragment_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
