@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_passive"
-            android:icon="@drawable/fizz_passive"
+
             android:title="@string/menu_passive"
             />
 
