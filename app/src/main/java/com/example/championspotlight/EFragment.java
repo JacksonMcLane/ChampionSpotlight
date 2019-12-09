@@ -14,9 +14,7 @@ import android.widget.TextView;
 
 public class EFragment extends Fragment {
     private TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum, textViewDescription;
-    private ImageView imageViewPicture;
-    /**INCOMPLETE FRAGMENT*/
-    
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -30,10 +28,10 @@ public class EFragment extends Fragment {
     private void setValues() {
 
         textViewDescription.setText(
-                "First Cast: Fizz hops on his trident towards the cursor,\nbecoming briefly untargetable." +
+                "First Cast: Fizz hops on his trident towards the cursor,\nbecoming briefly untargetable.\n" +
                 "\nSecond Cast: Fizz cancels the spell early, jumping towards\nthe cursor a second time and dealing" +
                 " magic damage to\nnearby enemies.\n" +
-                "If Fizz does not reactivate, he deals damage in a larger area\nand slows all enemies hit for 2 seconds.");
+                "\nIf Fizz does not reactivate, he deals damage in a larger area\nand slows all enemies hit for 2 seconds.");
 
         textViewCostNum.setText("90 / 95 / 100 / 105 / 110 Mana");
         Log.d("EFragment", "setValues: " + textViewCostNum.getText());
@@ -53,7 +51,6 @@ public class EFragment extends Fragment {
         textViewRange = rootView.findViewById(R.id.textView_eFragment_range);
         textViewCostNum = rootView.findViewById(R.id.textView_eFragment_costNum);
         textViewRangeNum = rootView.findViewById(R.id.textView_eFragment_rangeNum);
-        imageViewPicture = rootView.findViewById(R.id.imageView_eFragment_image);
         textViewDescription = rootView.findViewById(R.id.textView_eFragment_description);
     }
 }

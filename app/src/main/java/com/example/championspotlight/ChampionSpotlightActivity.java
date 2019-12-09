@@ -32,14 +32,6 @@ public class ChampionSpotlightActivity extends AppCompatActivity
         setContentView(R.layout.activity_champion_spotlight);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -90,26 +82,31 @@ public class ChampionSpotlightActivity extends AppCompatActivity
         switch (id) {
             case R.id.nav_passive: {
                 fragment = new PassiveFragment();
+                setTitle(R.string.passive_header);
                 break;
             }
 
             case R.id.nav_q: {
                 fragment = new QFragment();
+                setTitle(R.string.q_header);
                 break;
             }
 
             case R.id.nav_w: {
                 fragment = new WFragment();
+                setTitle(R.string.w_header);
                 break;
             }
 
             case R.id.nav_e: {
                 fragment = new EFragment();
+                setTitle(R.string.e_header);
                 break;
             }
 
             case R.id.nav_r: {
                 fragment = new RFragment();
+                setTitle(R.string.r_header);
                 break;
             }
         }

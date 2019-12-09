@@ -15,6 +15,11 @@
     <string name="cost">Cost:</string>
     <string name="range">Range:</string>
     <string name="n_a">N/A</string>
+    <string name="passive_header">Passive</string>
+    <string name="q_header">Q Ability</string>
+    <string name="w_header">W Ability</string>
+    <string name="e_header">E Ability</string>
+    <string name="r_header">Ultimate(R) Ability</string>
 
 
 </resources>

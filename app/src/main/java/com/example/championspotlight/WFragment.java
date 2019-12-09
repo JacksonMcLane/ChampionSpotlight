@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 public class WFragment extends Fragment {
 
-    /**INCOMPLETE FRAGMENT*/
     private TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum;
     private TextView textViewDescription;
 
