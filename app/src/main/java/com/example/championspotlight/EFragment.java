@@ -2,10 +2,10 @@ package com.example.championspotlight;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,8 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class EFragment extends Fragment {
-    TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum, textViewDescription;
-    ImageView imageViewPicture;
+    private TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum, textViewDescription;
+    private ImageView imageViewPicture;
     /**INCOMPLETE FRAGMENT*/
     
     @Nullable
@@ -23,24 +23,28 @@ public class EFragment extends Fragment {
         
         View rootView = inflater.inflate(R.layout.activity_efragment, container, false);
         wireWidgets(rootView);
+        setValues();
+        return rootView;
+    }
 
-        textViewDescription.setText("\n" +
-                "First Cast: Fizz hops on his trident towards the cursor,\nbecoming briefly untargetable." +
-                "\nSecond Cast: Fizz cancels the spell early, jumping towards\nthe cursor a second time and dealing" +
-                "magic damage to\nnearby enemies.\n" +
-                "If Fizz does not reactivate, he deals damage in a larger area\nand slows all enemies hit for 2 seconds.");
+    private void setValues() {
+
 
         textViewCostNum.setText("90 / 95 / 100 / 105 / 110 Mana");
+        Log.d("EFragment", "setValues: " + textViewCostNum.getText());
 
         textViewCost.setText(R.string.cost);
 
-        textViewCost.setText(R.string.range);
+        textViewRange.setText(R.string.range);
 
         textViewRangeNum.setText("400");
 
         textViewName.setText("Playful / Trickster");
-
-        return rootView;
+        textViewDescription.setText("\n" +
+                "First Cast: Fizz hops on his trident towards the cursor,\nbecoming briefly untargetable." +
+                "\nSecond Cast: Fizz cancels the spell early, jumping towards\nthe cursor a second time and dealing" +
+                " magic damage to\nnearby enemies.\n" +
+                "If Fizz does not reactivate, he deals damage in a larger area\nand slows all enemies hit for 2 seconds.");
     }
 
     private void wireWidgets(View rootView) {
