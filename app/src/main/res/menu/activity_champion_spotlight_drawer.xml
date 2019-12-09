@@ -6,11 +6,13 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_passive"
+
             android:title="@string/menu_passive"
             />
 
         <item
             android:id="@+id/nav_q"
+            android:icon="@drawable/ic_fizz_q"
             android:title="@string/menu_q"
             />
 
