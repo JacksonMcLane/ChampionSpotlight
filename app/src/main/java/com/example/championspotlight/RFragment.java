@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class RFragment extends Fragment {
     private TextView textViewName, textViewCost, textViewRange, textViewCostNum, textViewRangeNum, textViewDescription;
-    private ImageView imageViewPicture;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -60,7 +60,7 @@ public class RFragment extends Fragment {
         textViewRange = rootView.findViewById(R.id.textView_rFragment_range);
         textViewCostNum = rootView.findViewById(R.id.textView_rFragment_costNumber);
         textViewRangeNum = rootView.findViewById(R.id.textView_rFragment_rangeNumber);
-        imageViewPicture = rootView.findViewById(R.id.imageView_qFragment_image);
-        textViewDescription = rootView.findViewById(R.id.textView_qFragment_description);
+
+        textViewDescription = rootView.findViewById(R.id.textView_rFragment_description);
     }
 }
