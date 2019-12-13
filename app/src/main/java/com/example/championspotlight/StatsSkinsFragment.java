@@ -15,7 +15,7 @@ public class StatsSkinsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_passive_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.activity_stats_skins_fragment, container, false);
         return rootView;
     }
 }
