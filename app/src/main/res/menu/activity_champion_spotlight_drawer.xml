@@ -5,6 +5,12 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_stats_skins"
+
+            android:title="@string/menu_stats_skins"
+            />
+
+        <item
             android:id="@+id/nav_passive"
 
             android:title="@string/menu_passive"
@@ -33,6 +39,8 @@
 
             android:title="@string/menu_r"
             />
+
+
     </group>
 
 </menu>
