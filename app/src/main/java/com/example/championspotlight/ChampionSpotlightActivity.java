@@ -1,5 +1,6 @@
 package com.example.championspotlight;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -36,6 +37,13 @@ public class ChampionSpotlightActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = new HomePageFragment();
+        if (fragment != null) {
+            fm.beginTransaction()
+                    .replace(R.id.contraint_layout_spotlight_container, fragment)
+                    .commit();
+        }
 
 
     }
