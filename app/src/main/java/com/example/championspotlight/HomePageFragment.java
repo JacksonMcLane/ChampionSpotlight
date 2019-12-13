@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 public class HomePageFragment extends Fragment {
     TextView textViewWelcome;
@@ -32,19 +33,19 @@ public class HomePageFragment extends Fragment {
         buttonGoNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity(), StatsSkinsFragment.class);
-                StatsSkinsFragment nextFrag= new StatsSkinsFragment();
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.constraintLayout_statsSkinFragment, nextFrag, "findThisFragment")
-                        .addToBackStack(null)
-                        .commit();
-                startActivity(i);
+                Fragment fragment = new StatsSkinsFragment();
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                if (fragment != null) {
+                    fm.beginTransaction()
+                            .replace(R.id.contraint_layout_spotlight_container, fragment)
+                            .commit();
+                }
             }
         });
     }
 
     private void setValues() {
-        buttonGoNext.setText("Go Next.");
+        buttonGoNext.setText("Go Next");
         textViewWelcome.setText("Welcome to the League of Legends Champion Spotlight" + "\n" +
             "Featuring Fizz, the Tidal Trickster.");
     }
