@@ -5,6 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Fizz</string>
     <string name="nav_header_subtitle">The Tidal Trickster</string>
+    <string name="fizz_base_stats">Fizz Base Stats:</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="menu_stats_skins">Stats &amp; Skins</string>
