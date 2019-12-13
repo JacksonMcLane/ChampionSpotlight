@@ -77,6 +77,13 @@ public class ChampionSpotlightActivity extends AppCompatActivity
         Fragment fragment = null;
 
         switch (id) {
+
+            case R.id.nav_stats_skins: {
+                fragment = new StatsSkinsFragment();
+                setTitle(R.string.menu_stats_skins);
+                break;
+            }
+
             case R.id.nav_passive: {
                 fragment = new PassiveFragment();
                 setTitle(R.string.passive_header);
