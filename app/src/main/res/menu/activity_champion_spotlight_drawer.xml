@@ -12,7 +12,7 @@
 
         <item
             android:id="@+id/nav_passive"
-            android:icon="@drawable/fizz_passive"
+            android:icon="@drawable/ic_fizz_passive"
             android:title="@string/menu_passive"
             />
 
@@ -24,7 +24,7 @@
 
         <item
             android:id="@+id/nav_w"
-
+            android:icon="@drawable/ic_fizz_w"
             android:title="@string/menu_w"
             />
 
