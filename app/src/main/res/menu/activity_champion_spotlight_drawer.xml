@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_stats_skins"
-
+            android:icon="@drawable/ic_fizz_stats_skins"
             android:title="@string/menu_stats_skins"
             />
 
